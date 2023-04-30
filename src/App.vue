@@ -1,9 +1,9 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark> </v-app-bar>
-
     <v-main>
-      <router-view />
+      <div class="main">
+        <router-view />
+      </div>
     </v-main>
   </v-app>
 </template>
@@ -17,3 +17,10 @@ export default {
   }),
 };
 </script>
+<style scoped>
+.main {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+}
+</style>
